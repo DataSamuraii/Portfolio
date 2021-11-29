@@ -1,0 +1,86 @@
+/* Header code*/
+/* Style the header with a grey background and some padding */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #b9defe;
+    padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+    background-color: #fefeff;
+    color: black;
+}
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+    margin-right: 20px;
+}
+
+/* If the screen less than 800px, enable Hamburger menu header */
+@media only screen and (min-width: 801px) {
+    .hamburger { display: none; }
+}
+@media only screen and (max-width: 800px) {
+    .header { display: none; }
+    /* Style the navigation menu */
+    .hamburger {
+        overflow: hidden;
+        background-color: #b9defe;
+        position: absolute;
+        width: 100%;
+    }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .hamburger #myLinks {
+        display: none;
+    }
+
+    /* Style navigation menu links */
+    .hamburger a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+    }
+
+    /* Style the hamburger menu */
+    .hamburger a.icon {
+        background: #b9defe;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    /* Add a white background color on mouse-over */
+    .hamburger a:hover {
+        background-color: #fefeff;
+        color: black;
+    }}
+.active_small {
+    font-weight: bold;
+}
+/* Header code ends*/
